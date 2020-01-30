@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class SamatSanat {
+
+    public static void main(String[] args) {
+        Scanner lukija = new Scanner(System.in);
+        
+        System.out.println("Type in something:");
+        
+        String eka = lukija.nextLine();
+        
+        System.out.println("Type in something again:");
+        
+        String toka = lukija.nextLine();
+        
+        if (eka.equals(toka)) {
+        System.out.println("Same thing");
+        
+       } else {
+            System.out.println("Not the same");
+        }
+
+       
+    }
+}
