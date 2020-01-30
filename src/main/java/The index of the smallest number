@@ -1,0 +1,37 @@
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class PienimmanLuvunIndeksi {
+
+    public static void main(String[] args) {
+        Scanner lukija = new Scanner(System.in);
+
+        ArrayList<Integer> lista = new ArrayList<>();
+        while (true) {
+          int luettu = Integer.valueOf(lukija.nextLine());
+          if (luettu == 9999) {
+              break;
+            }
+
+            lista.add(luettu);
+        }
+        int i = 0;
+        int listankoko = lista.size();
+        int pienin = lista.get(0);
+        while (true) {
+        int luku = lista.get(i);
+        if (pienin > luku) {
+        pienin = luku;
+          }
+        
+        if (i < listankoko) {
+        i++;
+            }
+ 
+            System.out.println("Smallest number is " + pienin);
+            System.out.println("Smallest number is found in the index " + i);
+
+        }
+        }
+        }
