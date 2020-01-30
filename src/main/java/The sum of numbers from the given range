@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class RajatunLukusarjanSumma {
+
+    public static void main(String[] args) {
+        Scanner lukija = new Scanner(System.in);
+       
+        System.out.println("First:");
+        
+        int eka = Integer.valueOf(lukija.nextLine());
+        
+        System.out.println("Second:");
+
+        int toka = Integer.valueOf(lukija.nextLine());
+
+        int i = eka;
+        int luku = eka + 1;
+        int summa = 0;
+        
+        while (true) {
+            eka += luku;
+            luku ++;
+            i++;
+        if (i == toka) {
+            break;
+        }
+        }
+
+        
+        System.out.println("The sum is " + eka);
+    }
+}
