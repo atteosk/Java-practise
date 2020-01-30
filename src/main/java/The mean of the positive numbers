@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+public class PositiivistenLukujenKeskiarvo {
+
+    public static void main(String[] args) {
+        Scanner lukija = new Scanner(System.in);
+        
+        double lukumaara = 0;
+        double summaposi = 0;
+        double summakaikki = 0;
+        double jako = 0;
+        
+        while (true) {
+            
+        int luku = Integer.valueOf(lukija.nextLine());
+        
+        summakaikki = summakaikki + luku;  
+          
+        if (summakaikki <= 0) {
+        
+        System.out.println("Calculating the mean is impossible");
+        }
+        if (luku == 0) {
+                break;
+        
+        } if (luku <= 0) {
+        
+        continue;  
+        
+        }
+   {
+          
+          summaposi = summaposi + luku; 
+          lukumaara = lukumaara + 1;     
+          
+      }        
+      } 
+
+      System.out.println(jako = summaposi / lukumaara * 1.0);
+  
+    }
+    
+}
