@@ -1,0 +1,24 @@
+
+import java.util.Scanner;
+
+public class Keskustelu {
+
+    public static void main(String[] args) {
+        Scanner lukija = new Scanner(System.in);
+        
+        System.out.println("Good day! How are you?");
+        
+        lukija.nextLine();
+        
+        System.out.println("That's interesting, tell me more!");
+        
+        lukija.nextLine();
+        
+        System.out.println("Thanks for sharing!!");
+        
+        
+        
+
+
+    }
+}
