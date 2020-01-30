@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class MihinJaMista {
+
+    public static void main(String[] args) {
+        Scanner lukija = new Scanner(System.in);
+
+        System.out.println("Up to which number?");
+        
+        int luku = 1;
+        int ylaraja = Integer.valueOf(lukija.nextLine());
+        
+        while (ylaraja >= luku) {  
+        System.out.println(luku);
+        luku++;    
+        }
+        System.out.println("Starting from which number?");
+        
+        int alaraja = Integer.valueOf(lukija.nextLine());
+        
+        while (alaraja <= ylaraja) {
+            System.out.println(alaraja);
+            alaraja++;
+        }
+
+    }
+    
+}
